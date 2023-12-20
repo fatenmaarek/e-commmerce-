@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #f0f5e1;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+}
+
+#admin-dashboard {
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+   
+    text-align: center;
+}
+
+#admin-dashboard h2 {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color:#333;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#add-product-form {
+    display: none;
+    margin-top: 20px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: black;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+#product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#product-table th,
+#product-table td {
+    border: 1px solid  #333;
+    padding: 12px;
+    text-align: left;
+}
+
+#product-table th {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+#product-list .product-item p {
+    margin: 0;
+}
+
+#product-list .product-item .edit-button,
+#product-list .product-item .delete-button {
+    background-color: #777;
+    color: white;
+    padding: 8px 15px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#product-list .product-item .edit-button:hover,
+#product-list .product-item .delete-button:hover {
+    background-color: #555;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #4caf50;
+    color: white;
+}

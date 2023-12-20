@@ -1,0 +1,349 @@
+*{
+    margin: o;
+    box-sizing: border-box;
+    padding: 0;
+}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    text-align: center;
+}
+h2{
+    margin-bottom: 30px;
+    color: #333;
+
+}
+nav {
+   background-color: #f5f5f5;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 3px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #4caf50;
+    color: white;
+}
+.logo{
+    font-size: 15px;
+font-weight: bolder;
+}
+.logo span{
+    color: rgb(120, 175, 10);
+}
+
+
+h3{
+    margin-top: 50px;
+
+}
+.main{
+    background-image: url("https://roosterreadsblog.files.wordpress.com/2023/08/guven-gunes-iy3gn4iplw8-unsplash.jpg?w=1024");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.mainText{
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 66px;
+    font-size: 26px;
+    color: white;
+}
+.mainText span{
+    color: rgb(149, 219, 10);
+}
+.mainText button{
+    width: 140px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    margin-top: 24px;
+    background-color: rgb(130, 191, 7);
+    color: white;
+    
+}
+.head{
+    text-align: center;
+    padding: 80px;
+}
+.head span{
+    color: rgb(117, 174, 4);
+}
+#product-list {
+    display: flex;
+   flex-direction: row;
+    justify-content: space-between;
+   margin-left: 10px;
+}
+
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.product-item img {
+    max-width: 100%;
+    max-height: 130px;    
+    display: block;  
+    margin: 0 auto;  
+    transition: transform 0.3s ease-in-out;
+}
+.product-item img:hover {
+    transform: scale(3);
+}
+
+.product-item select {
+    padding: 8px;
+    font-size: 14px;
+}
+
+.product-item button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.product-item button:hover {
+    background-color: #333;
+}
+.wishlist-icon {
+    font-size: 35px;
+    cursor: pointer;
+    margin-left: 50px;
+    padding: 0px 10px;
+    color: red;
+}
+
+#wishlistLink {
+    position: relative;
+}
+
+#wishlistCount {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    display: none;
+}
+#wishlistCount:not(:empty) {
+    display: inline;
+}
+
+#cartLink {
+    position: relative;
+}
+
+#cartCount {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    display: none;
+}
+#cartCount:not(:empty) {
+    display: inline;
+}
+#orderList {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.order {
+    display: inline-block;
+    width: calc(33.33% - 20px); 
+    margin: 0 10px 20px 0; 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order h3 {
+    color: #333;
+}
+
+.order p {
+    margin: 5px 0;
+}
+
+.order h4 {
+    margin-top: 15px;
+    color: #555;
+}
+
+.order ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order li {
+    margin-bottom: 5px;
+}
+
+.order p strong {
+    font-weight: bold;
+    color: #444;
+}
+#search-form {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#search-form label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+#search-form input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+#search-form button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#search-form button:hover {
+    background-color: #333;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    background-color: #fff;
+    padding: 22px;
+    border-radius: 6px;
+    margin: auto;
+}
+.aboutText{
+    padding: 11px;
+}
+.aboutText p{
+    margin-top: 22px;
+}
+.aboutText button{
+    width: 120px;
+    height: 33px;
+    background-color: rgb(115, 169, 6);
+    color: white;
+    font-size: 18px;
+    border: none;
+    margin-top: 22px;
+}
+.about img{
+    width: 300px;
+    border-radius: 6px;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 66px;
+    margin-top: 66px;
+    background-color: black;
+    color: white;
+}
+.text p{
+    margin-top: 11px;
+}
+@media screen and (max-width:800px){
+    ul{
+        display: none;
+    }
+    #bar{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .showData{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 22px;
+        border-radius: 5px;
+        background-color: #fff;
+        position: fixed;
+        top: 75px;
+        right: 4%;
+        gap: 20px;
+    }
+}
+@media screen and (max-width:900px){
+    .about{
+        display: block;
+        width: 80%;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width:450px){
+    .partners{
+        width: 70%;
+    }
+    .brand img{
+        width: 80%;
+    }
+    .about img{
+        width: 90%;
+    }
+}
+#logoutLink{
+    padding:15px;
+    background-color: rgba(128, 180, 23, 0.877);
+text-decoration: none;
+color:white;
+}
